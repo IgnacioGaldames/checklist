@@ -1,0 +1,20 @@
+.precio-normal
+.precio-internet
+.precio-opex
+.total-descuento
+.final
+.opex
+    &::after
+        background-image: url('../assets/opex-red.png')
+        background-size: 30px 30px
+        display: inline-block
+        width: 30px
+        height: 30px
+        content: ''
+        margin-left: 5px
+        @include media-breakpoint-down(md)
+            background-size: 20px 20px
+            width: 20px
+            height: 20px
+.final
+    @include font-size(30)

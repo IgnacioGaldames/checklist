@@ -1,0 +1,15 @@
+.marco
+    border-style: solid
+    border-width: 8px
+    width: calc(100% - 16px)
+    height: calc(100% - 16px)
+    position: absolute
+    z-index: 10
+    margin: 8px
+    pointer-events: none
+.marco-my-a
+    @include marco($my-coral, $my-yellow)
+    @extend .marco
+.marco-my-b
+    @include marco-45($my-coral, $my-yellow, $my-purple)
+    @extend .marco

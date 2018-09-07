@@ -1,0 +1,39 @@
+.bg
+    position: relative
+    width: 120%
+    height: 520px
+    max-width: 820px
+    float: right
+@keyframes play-bg-mochila
+    100%
+        background-position: -8200px 0
+@keyframes play-bg-calzado
+    100%
+        background-position: -9020px 0
+@keyframes play-bg-instrumentos
+    100%
+        background-position: -5740px 0
+.backgroundCalzado
+    background-image: url('../img/lp-esc-2018-calzado-bg.jpg')
+    animation: play-bg-calzado 2.5s steps(11) infinite
+    @extend .bg
+.backgroundDeportes
+    background-image: url('../img/lp-esc-2018-deportes-bg.jpg')
+    animation: play-bg-instrumentos 2.5s steps(7) infinite
+    @extend .bg
+.backgroundInstrumentos
+    background-image: url('../img/lp-esc-2018-instrumentos-bg.jpg')
+    animation: play-bg-instrumentos 2.5s steps(7) infinite
+    @extend .bg
+.backgroundMochila
+    background-image: url('../img/lp-esc-2018-mochila-bg.jpg')
+    animation: play-bg-mochila 2.5s steps(10) infinite
+    @extend .bg
+.backgroundTecno
+    background-image: url('../img/lp-esc-2018-tecno-bg.jpg')
+    animation: play-bg-mochila 2.5s steps(10) infinite
+    @extend .bg
+.backgroundUtiles
+    background-image: url('../img/lp-esc-2018-utiles-bg.jpg')
+    animation: play-bg-mochila 2.5s steps(10) infinite
+    @extend .bg

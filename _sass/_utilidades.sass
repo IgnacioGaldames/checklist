@@ -1,0 +1,114 @@
+// Utilidades
+
+.full-img
+    width: 100%
+
+.pointer-events-none
+    pointer-events: none
+.square
+    position: relative
+    width: 100%
+    overflow: hidden
+    &:after
+        content: ""
+        display: block
+        padding-bottom: 100%
+.v-rectangle
+    position: relative
+    width: 100%
+    overflow: hidden
+    &:after
+        content: ""
+        display: block
+        padding-bottom: 125%
+.h-rectangle
+    position: relative
+    width: 100%
+    overflow: hidden
+    &:after
+        content: ""
+        display: block
+        padding-bottom: 66.666666666%
+.holder
+    //padding-bottom: 56.25%
+    //@include min-height(400)
+    position: absolute
+    width: 100%
+    height: 100%
+    background-repeat: no-repeat
+    background-size: cover
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.5)
+.inner-holder
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    position: absolute
+    background: rgba(0, 0, 0, 0)
+    padding: 15px
+    opacity: 1
+    transition: opacity 1s cubic-bezier(.19,1,.22,1)
+.holder:hover 
+    .inner-holder
+        opacity: 1
+        background: rgba(0, 0, 0, 0.125)
+.full-height
+    height: 100vh
+.bg-img
+    background-size: cover
+    background-position: center center
+    background-repeat: no-repeat
+//marco
+
+    
+//Sombras
+.shadow-2dp
+    @include shadow-2dp()
+.shadow-3dp
+    @include shadow-3dp()
+.shadow-4dp
+    @include shadow-4dp()
+.shadow-6dp
+    @include shadow-6dp()
+.shadow-8dp
+    @include shadow-8dp()
+.shadow-16dp
+    @include shadow-16dp()
+.shadow-24dp
+    @include shadow-24dp()
+
+//Clases para rotar
+.rotate-5
+    @include rotate(5)
+.rotate-10
+    @include rotate(10)
+.rotate-15
+    @include rotate(15)
+.rotate-cc-5
+    @include rotate(-5)
+.rotate-cc-10
+    @include rotate(-10)
+.rotate-cc-10
+    @include rotate(-15)
+
+
+//numero
+$base-numero: 50
+.numero
+    @include height($base-numero)
+    @include width($base-numero)
+    line-height:  ($base-numero) + px
+    background-color: $mainColor
+    text-align: center
+    margin: -($base-numero/2) + px auto 0
+    @include border-radius($base-numero)
+    position: absolute
+    left: calc(50% - #{$base-numero/2}px)
+    z-index: 9
+    @include font-size($base-numero)
+    h1, h2
+        margin: 0
+        line-height: ($base-numero) + px
+@include media-breakpoint-down(md)
+    .full-height
+        height: auto

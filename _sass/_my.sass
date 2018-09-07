@@ -1,0 +1,87 @@
+//Imports Necesarios
+@import 'custom'
+@import '../node_modules/bootstrap/scss/_functions'
+@import '../node_modules/bootstrap/scss/_variables'
+@import '../node_modules/bootstrap/scss/mixins/_breakpoints'
+
+//Variables
+$mainColor: $my-grey
+$backgroundColor: $my-white
+
+// Importar las Utilidades necesarias segun el caso
+@import 'owl'
+//@import '_utilidades/youtube'
+//@import '_utilidades/marco-my'
+//@import '_utilidades/scales'
+//@import '_utilidades/form'
+//@import '_utilidades/animacion-cuadros'
+@import 'utilidades'
+@import '_utilidades/gradientes'
+
+// Inicio Estilos Personalizados
+
+// Media Breakpoint Hacia Arriba
+//@include media-breakpoint-up(xs)
+//@include media-breakpoint-up(sm)
+//@include media-breakpoint-up(md)
+//@include media-breakpoint-up(lg)
+//@include media-breakpoint-up(xl)
+
+// Media Breakpoint Hacia Abajo
+//@include media-breakpoint-down(xs)
+//@include media-breakpoint-down(sm)
+//@include media-breakpoint-down(md)
+//@include media-breakpoint-down(lg)
+
+// Media Breakpoint Hacia Especifica
+//@include media-breakpoint-only(xs)
+//@include media-breakpoint-only(sm)
+//@include media-breakpoint-only(md)
+//@include media-breakpoint-only(lg)
+//@include media-breakpoint-only(xl)
+
+
+//mas resets necesarios
+*
+	transition: all .2s cubic-bezier(0.175, 0.885, 0.32, 1.275)
+	-webkit-transition: all .2s cubic-bezier(0.175, 0.885, 0.32, 1.275)
+	-moz-transition: all .2s cubic-bezier(0.175, 0.885, 0.32, 1.275)
+	-o-transition: all .2s cubic-bezier(0.175, 0.885, 0.32, 1.275)
+::-moz-selection
+	@include selection( $my-morado, $my-white)
+::selection
+	@include selection( $my-morado, $my-white)
+.wow
+	visibility: hidden
+.btn
+	min-width: 100px
+	&:hover
+		//@include shadow4()
+		z-index: 1
+.btn-outline-my-white:hover
+	color: $my-grey !important
+.modal
+	z-index: 4050 !important
+	overflow: scroll !important
+.card
+	@include shadow-4dp()
+	@include border-radius(5)
+	transition: all 0.3s cubic-bezier(.25,.8,.25,1)
+	overflow: hidden
+	z-index: 9
+	&:hover
+		z-index: 99
+		@include shadow-8dp()
+.bg-gradiente
+	@include background_gradient($my-morado, $my-celeste)
+	position: fixed
+	top: 0
+	right: 0
+	bottom: 0
+	left: 0
+	z-index: 0
+
+//Basicos
+@import '_utilidades/precios'
+p
+	margin: 0
