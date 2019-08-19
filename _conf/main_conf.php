@@ -72,38 +72,8 @@ $seccion_checks = true;
 		"Fecha correcta",
 		"Precio correcto",
 	);
-	$seccion_checks_desarrollo = array(
-		"Meta title existe y es correcto",
-		"Meta description existe es correcto",
-		"URL es amigable para seo ",
-		"Llamada css correcta y no repetida",
-		"Si es SASS, css minificado",
-		"Colores CSS correctos",
-		"CSS sin errores",
-		"Estilo de Imprenta existe y es correcto",
-		"Estilo para móviles correcto",
-		"Estructura semántica correcta",
-		"Tipografías correctas",
-		"Favicon Correcto",
-		"Google Analytics correcto",
-		"HTML sin errores",
-		"HTML sin links que lleven a una página 404",
-		"IMG con Alt",
-		"IMG no es placeholder",
-		"IMG carga correctamente",
-		"Un solo H1",
-		"Titulo es H1",
-		"Tamaño de tipografías está estandarizado",
-		"Nombre link corresponde a nombre de página y a url de página de destino",
-		"Botones con link correctos",
-		"Header y footer están estandarizados",
-		"Probar en Chrome, Firefox y Safari",
-		"Probar en dispositivo móvil real",
-		"Clases y variables con nombre en camelCase",
-		"carpeta imágenes img",
-	);
 	$seccion_checks_diseño = array(
-		"Colores en RGB",
+		"Url semantica para los contenidos (Chequear con analista)",
 		"Colores son de paleta oficial",
 		"Si es imagen de fondo, contenido relevante dentro de la grilla",
 		"Si es imagen de fondo para móvil, contenido relevante visible y en contraste con contenido superior",
@@ -119,7 +89,55 @@ $seccion_checks = true;
 		"Hay una acción clara y concisa a realizar",
 		"Revisar HTML antes de dar el visto bueno",
 	);
+	$seccion_checks_desarrollo = array(
+		"Url semantica para los contenidos",
+		"Agregar el código del TM del privado en las plantillas que se publicarán en el sitio privado",
+		"Agregar el código del TM público en aquellas plantillas que no tendrán header del público",
+		"Nombre de clases CSS e Ids Semanticos (ej: nombrecampana-div)",
+		"Utilización de helpers de bootstrap",
+		"El boostrap 3 empieza el corte en 768px y aspirar a definir con la data del dispositivo más pequeño desde el que ingresan",
+		"Iconografia en png para que pueda ser cargado por el custom field",
+		"Ausencia de llamadas a rutas absolutas",
+		"Nombres de imágenes semanticos (ej: nombrecampana-bg.jpg)",
+		"Compatibilidad con navegadores Firefox, Chrome, IE9+ y Safari",
+		"Tamaño de tipografía estándar",
+		"Caracteres especiales con acute",
+		"Semántica correcta",
+		"Diseño responsivo",
+	);
+	$seccion_checks_back = array(
+		"Formularios con códigos UTM",
+		"Formularios con ID dinámico",
+		"Input RUT y CLAVE con atributo  autocomplete='off' ",
+		"Declaración de las modificaciones en las tablas de la base de datos",
+		"Definición clara de los campos de los formularios",
+		"Mini descripción del desarrollo que se envía en un commit"
+	);
+	$seccion_checks_analista = array(
+		"Uso de Alt en imágenes y vinculos (ver la posibilidad que nos da wp para dejar el campo de alt para la imagen o agfregarlo dentro del documento de ricardo de marcaje)",
+		"Considerar creación de una semántica (se hace relación con contenido)",
+		"Coherencia entre contenido y Alt",
+		"Presencia de etiqueta <title></title> para las imágenes",
+		"Presencia de metadescription y kw en campañas",
+		"Interacciones en marcados con eventos analytics o TM",
+		"Links externos con target '_blank' y definición en cada campaña de como se abren si son internos",
+		"Agregar el código del TM público en aquellas plantillas que no tendrán header del público",
+		"Agregar el código del TM del privado en las plantillas que se publicarán en el sitio privado",
 
+	);
+	$seccion_checks_coordinacion = array(
+		"Asegurar una correcta solicitud de cada desarrollo (fecha de publicación, hay o no campañas de medios asociados, quién es la contraparte oficial que revisa y da los vb)",
+		"Asegurar el mínimo viable para comenzar un desarrollo",
+		"Revisión del documento técnico al enviar el commit",
+		"Actualización periódica al equipo de acontecimientos de la compañía",
+		"Probar los links",
+		"Revisión del desarrollo en su versión desktop y mobile",
+		"Revisión de la inserción del código de TM",
+		"Revisión de la correcta inserción de los archivos involucrados en el commit ",
+		"Revisión de los textos (oetografía y puntuación)",
+		"Revisar el SEO (snipped, kw, alt imágenes)",
+		
+	);
 
 //Sección 13 (Info Footer)
 $seccion_footer = false;
